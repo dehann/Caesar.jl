@@ -8,69 +8,16 @@ A modern robotic toolkit for localization and mapping -- reducing the barrier of
 <!--
 [![Caesar](http://pkg.julialang.org/badges/Caesar_0.6.svg)](http://pkg.julialang.org/?pkg=Caesar&ver=0.6)-->
 
-# Introduction
+# Moved to JuliaRobotics
 
-Towards non-parametric / parametric state estimation and navigation solutions [1]. Implemented in [Julia](http://www.julialang.org/) (and [JuliaPro](http://www.juliacomputing.com)) for a fast, flexible, dynamic and productive robot designer experience. This framework maintains good interoperability with other languages like C/[C++](http://github.com/pvazteixeira/caesar-lcm) or [Python](http://github.com/dehann/Caesar.jl/blob/master/examples/database/python/neo4j_interact_example.py), as listed in features below. Multi-modal (quasi-multi-hypothesis) navigation and mapping solutions, using various sensor data, is a corner stone of this package. Multi-sensor fusion is made possible via vertically integrated [Multi-modal iSAM](http://frc.ri.cmu.edu/~kaess/pub/Fourie16iros.pdf).
-
-Critically, this package can operate in the conventional SLAM manner, using local dictionaries, or centralize around the `FactorGraph` through a graph database using [CloudGraphs.jl](https://github.com/GearsAD/CloudGraphs.jl.git), as [discussed here](http://people.csail.mit.edu/spillai/projects/cloud-graphs/2017-icra-cloudgraphs.pdf)[2]. A variety of plotting, 3D visualization, serialization, LCM middleware, and analysis tools come standard. Please see internal packages, Robot Motion Estimate [RoME.jl][rome-url] and back-end solver [IncrementalInference.jl][iif-url].
-
-Comments, questions and issues welcome.
-
-# Documentation
-
-Please see the [documentation](http://dehann.github.io/Caesar.jl/latest/):
-
-[![docs](https://img.shields.io/badge/docs-latest-blue.svg)](http://dehann.github.io/Caesar.jl/latest/)
-
-# Visualization
-
-Please see the [Arena.jl](http://www.github.com/JuliaRobotics/Arena.jl) package for the concentration of all 2D and 3D visualization utilities of the Caesar.jl robot navigation packages.
-
-# Installation
-
-Caesar can be installed with:
-```julia
-julia> Pkg.add("Caesar")
-```
-
-# Bleeding-edge Development Dependency Status
-
-| **Major Dependencies** |     **Status**     |    **Test Coverage**    |
-|:-----------------------:|:------------------:|:------------------:|
-| Caesar.jl | [![Build Status][build-img]][build-url] | [![codecov.io][cov-img]][cov-url] |
-| [RoME.jl][rome-url] | [![Build Status][r-build-img]][r-build-url] | [![codecov.io][r-cov-img]][r-cov-url] |
-| [IncrementalInference.jl][iif-url] | [![Build Status][iif-build-img]][iif-build-url] | [![codecov.io][iif-cov-img]][iif-cov-url] |
-| [KernelDensityEstimate.jl][kde-url] | [![Build Status][kde-build-img]][kde-build-url] | [![codecov.io][kde-cov-img]][kde-cov-url] |
-| [TransformUtils.jl][tf-url] | [![Build Status][tf-build-img]][tf-build-url] | [![codecov.io][tf-cov-img]][tf-cov-url] |
-| [Graphs.jl][graphs-url] | [![Build Status][graphs-build-img]][graphs-build-url] | [![codecov.io][graphs-cov-img]][graphs-cov-url] |
-| [CloudGraphs.jl][cloudgraphs-url] | [![Build Status][cloudgraphs-build-img]][cloudgraphs-build-url] | [![codecov.io][cloudgraphs-cov-img]][cloudgraphs-cov-url] |
-
-# Contributors
-
-Authors directly involved with this package are:
-
-D. Fourie, S. Claassens, P. Vaz Teixeira, N. Rypkema, S. Pillai, R. Mata, M. Kaess, J. Leonard
-
-We are grateful for many, many contributions within the Julia package ecosystem -- see the `REQUIRE` files of `Caesar, Arena, RoME, RoMEPlotting, KernelDensityEstimate, IncrementalInference, NLsolve, DrakeVisualizer, Graphs, CloudGraphs` and others for a far reaching list of contributions.
-
-# Cite
-
-Consider citing our work:
-
-```
-@misc{caesarjl,
-  author = "Dehann Fourie, John Leonard, Micheal Kaess, and contributors",
-  title =  "Caesar.jl",
-  year =   2017,
-  url =    "https://github.com/dehann/Caesar.jl"
-}
-```
+Please find the upstream package at [JuliaRobotics/Caesar.jl](https://github.com/JuliaRobotics/Caesar.jl), and see [juliarobotics.org for more](http://www.juliarobotics.org); as well as a [direct link to the Caesar documentation](http://www.juliarobotics.org/Caesar.jl/latest/).
 
 
-[cov-img]: https://codecov.io/github/dehann/Caesar.jl/coverage.svg?branch=master
-[cov-url]: https://codecov.io/github/dehann/Caesar.jl?branch=master
-[build-img]: https://travis-ci.org/dehann/Caesar.jl.svg?branch=master
-[build-url]: https://travis-ci.org/dehann/Caesar.jl
+
+[cov-img]: https://codecov.io/github/JuliaRobotics/Caesar.jl/coverage.svg?branch=master
+[cov-url]: https://codecov.io/github/JuliaRobotics/Caesar.jl?branch=master
+[build-img]: https://travis-ci.org/JuliaRobotics/Caesar.jl.svg?branch=master
+[build-url]: https://travis-ci.org/JuliaRobotics/Caesar.jl
 
 [rome-url]: http://www.github.com/JuliaRobotics/RoME.jl
 [r-cov-img]: https://codecov.io/github/JuliaRobotics/RoME.jl/coverage.svg?branch=master
